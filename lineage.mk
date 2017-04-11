@@ -17,21 +17,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device
-$(call inherit-product, device/leeco/x2/device.mk)
+$(call inherit-product, device/leeco/x910/device.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_x2
-PRODUCT_DEVICE := x2
+PRODUCT_NAME := lineage_x910
+PRODUCT_DEVICE := x910
 PRODUCT_MANUFACTURER := LeMobile
 PRODUCT_BRAND := LeEco
 
 PRODUCT_GMS_CLIENTID_BASE := android-letv
 
-TARGET_VENDOR_PRODUCT_NAME := LeMax2
-TARGET_VENDOR_DEVICE_NAME := le_x2
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=le_x2 PRODUCT_NAME=LeMax2
+TARGET_VENDOR_PRODUCT_NAME := LeMaxPro
+TARGET_VENDOR_DEVICE_NAME := le_x910
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=le_x910 PRODUCT_NAME=LeMaxPro
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=LeEco/LeMax2_NA/le_x2_na:6.0.1/FIXNAOP5801607182S/letv07181411:user/release-keys \
